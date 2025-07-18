@@ -1,0 +1,15 @@
+streamlit
+Pillow
+langdetect
+google-cloud-vision
+google-generativeai
+python-dotenv
+faiss-cpu
+langchain
+langchain-community
+langchain-huggingface
+sentence-transformers
+requests
+PyMuPDF
+pandas
+openpyxl

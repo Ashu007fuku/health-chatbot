@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "obesity-bot-train",
+  "private_key_id": "801a1cca327b4329b0651924aa764c8621d6023c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDgOWZtRrQBbdgU\n4FIkY0jU5g8FurMlpcalik1/n/EtY8k+vpJHZ5BIY/LwfCYOQexRw0rCrhDKLJl8\n6sIp8ZQRQM1q6t4QOJU/b47mYGOhlqanJD9HTjheeuxGUHz4GfEvOJqod8ecYR1+\nALkZMsYwKb+4C5eBRtj+7e8fJEXgTbNNRV2oPOAhv5+vOSxPLziKxInsG3G2R8nq\nJiTMfJkob67mlaqgQlRr/D/w75NGOmvr4ASO93XrkAj497rpsjUGG8t+zGBC9D9y\n1rjgPBoNDAFbJ18EnXB1a38g7WdKv+hg8GxG2Uv7it7RhSakda4qdTxjePs/93WF\njiRCqZLLAgMBAAECggEAQnixxT57GZtbPiEcKN5oFnlXRb8J4eTJxYSBIg8j2+1j\nmR681b89dkBvIlzjmUFw0fJfxOP+ZTkgjXg49F9CInVAEGytRUjI8gPb7K7xilNT\nd2RXAAgPzO6LAfNVgOWL6xBQRRYxTko6CIMlXHOBboDJ7cE9+lyq8rRNucEyl+JS\n6blMX/FdzlwOe/nmO7Zd/ES6dUeAB4Jd0zNBZ4bvAT3rGl+kikrpYBwXJO+fE/OZ\nxIoHJJvmueRC1j1Sq1lfqpYP+ItXq1BE3BAQmngudZDfYmF5aS+i7Aai/GSx+P59\ndD006HH2sdIZdq1hCjTthPCo1HXcvHlBNb6NvtC0IQKBgQD01mnCOR26VJchgO0l\n5vdoOxY4TFlYrdYpOjNVOc+w6/1yQbr4Brc0MtsID8ffYL1+Df33DMw4nw85/PJ6\nrM5T6qxDf/1BbJdqZuWCAZwEP2HQ6k5DWdKSwuYdxV5EKFVmf+e4SvtoV1Q0+PBE\nzMDV6HB6FyHDFU+gtdbSMtfioQKBgQDqcmbBqZ2bJFRJgC1pyG6AEIDX/COqdJx8\nixD70pO7pqt1PWb2fG46QMrXxQa8IXwkbBmR00URTh/A/bEbXHDVvjITP/7qXByY\nKrDOKXbWRq/PRhlGHPrC39jzxKVk5wy7EZZcpCwQTK2T6qltmSUNkmLr4bhp1MIL\nJsAHxjjp6wKBgQC+b5O9NS3RQ4B119EdXQPs96B107TfC/96+8D3tkq8YyI0X7ns\nt1SCblf9ckDVl2pshLeYFEU4eUefpAZ6srSdgvfQXNoArFUttrEnKNdQWnhbxhNv\nwYrPCndwipaizvh2DGCQ8QmRg/OEbGh+KwCGoQ/zdtCU65uO9kEMJ+3RYQKBgFV0\nfZ/5g0kZZN+lqOf19tEXMt+HODjZaHC8/+PKTa8IgVaqmu0dTdBN7aHYXywTyHw+\nKtPMflBgeZKO5g9jEn3WZco+eVxTVtjgNrHuyzIvccXLd0rnJUAC98Fi3CZ7UVie\ngIAkFyuZx2szDa61M5xOz1/LVry8oD4QUc6DohshAoGAV3cow4rVI5RbdRumuGBm\nXwtGLixQLzJr9MAImsX27lApbT5MGBBgMkxuam3ANa3LlxcHKIzoLvHd7o2maVPH\nEcCrweZpywbhzbbMbbcrJFJgG40JtIRv+q7+BLpVkcOlGad0DYUfXgT7dR8iJalR\nzkFIx0nune+0zO2C6PmMvHw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "doocr-167@obesity-bot-train.iam.gserviceaccount.com",
+  "client_id": "102130744042301842492",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/doocr-167%40obesity-bot-train.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
