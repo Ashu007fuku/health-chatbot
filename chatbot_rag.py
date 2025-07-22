@@ -19,8 +19,13 @@ genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 # 🧠 Load Gemini + FAISS
 model = genai.GenerativeModel("models/gemini-2.5-pro")
 chat = model.start_chat()
-embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
-vectorstore = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
+try:
+    embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
+    vectorstore = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
+except Exception as e:
+    vectorstore = None
+    print("❌ FAISS index not found or failed to load. Please build and upload the faiss_index folder with index.faiss and index.pkl.")
+    print(f"Error details: {e}")
 
 # Fallback knowledge
 def fetch_website_summary():
@@ -36,7 +41,7 @@ def fetch_website_summary():
 # OCR diet log using Google Vision API
 
 def extract_table_google_vision(image_path):
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "obesity-bot-train-801a1cca327b.json"
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "obesity-bot-train-00c737889aa7.json"
     client = vision.ImageAnnotatorClient()
     with io.open(image_path, 'rb') as image_file:
         content = image_file.read()
@@ -226,6 +231,8 @@ def central_chat_system(user_input, lang):
         return response.text
 
     # QA mode
+    if vectorstore is None:
+        return "❌ FAISS index not found. Please contact the admin to upload the required index files."
     docs = vectorstore.similarity_search(user_input, k=6)
     context = "\n\n".join([doc.page_content for doc in docs])
     site = fetch_website_summary()
