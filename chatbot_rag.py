@@ -248,7 +248,10 @@ def central_chat_system(user_input, lang):
         prompt += "\nRespond in Hinglish (mix of Hindi and English) only."
     elif lang == 'en':
         prompt += "\nRespond in English only."
-    response = chat.send_message(prompt)
+    try:
+        response = chat.send_message(prompt)
+    except Exception as e:
+        return f"❌ Gemini API error: {e}"
     print_bot(response.text)
     if docs and hasattr(docs[0], 'metadata') and 'source' in docs[0].metadata:
         print(color("\nSources:", '90'))
