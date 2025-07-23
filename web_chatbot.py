@@ -44,9 +44,9 @@ if uploaded_file and st.button("Analyze Image", key="analyze_btn"):
     os.remove(image_path)
 
 # Display chat history
+st.markdown("---")
 for role, msg in st.session_state.chat_history:
     if role == "user":
         st.markdown(f"**You:** {msg}")
     else:
-        st.markdown(f"**🤖 Bot:** {msg}")
         st.markdown(f"**🤖 Bot:** {msg}")
