@@ -232,6 +232,7 @@ def central_chat_system(user_input, lang):
 
     # QA mode
     if vectorstore is None:
+        # Always return a visible response in the web UI
         return "❌ FAISS index not found. Please contact the admin to upload the required index files."
     docs = vectorstore.similarity_search(user_input, k=6)
     context = "\n\n".join([doc.page_content for doc in docs])
